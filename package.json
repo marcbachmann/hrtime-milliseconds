@@ -1,0 +1,32 @@
+{
+  "name": "hrtime-milliseconds",
+  "version": "1.0.0",
+  "description": "Calculates a diff in milliseconds between invocations.",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard && node test.js"
+  },
+  "keywords": [
+    "hrtime",
+    "milliseconds",
+    "millisecond",
+    "diff",
+    "date",
+    "performance"
+  ],
+  "author": "Marc Bachmann <marc.brookman@gmail.com>",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "nanobench": "^2.1.0",
+    "standard": "^10.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcbachmann/hrtime-milliseconds.git"
+  },
+  "bugs": {
+    "url": "https://github.com/marcbachmann/hrtime-milliseconds/issues"
+  },
+  "homepage": "https://github.com/marcbachmann/hrtime-milliseconds#readme"
+}
