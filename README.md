@@ -7,16 +7,22 @@ Calculates a diff in milliseconds between invocations. Originally I wanted to us
 
 ```
 const start = require('hrtime-milliseconds')
+
+// Create an instance
 const diff = start()
-console.log(diff) // returns milliseconds
+
+// Then invoke the returned function to get the time since its' creation
+// It returns an integer that defines how many milliseconds passed (here it's 0 as we're in the same tick)
+console.log(diff())
 
 setTimeout(function () {
-  start() // second invocation returns new diff since start
+  // second invocation returns new diff since start, so we'll see 100
+  console.log(diff())
 }, 100)
 ```
 
 
-In case you'd like to keep the nanosecond precision, use another module.
+In case you need nanosecond precision, please use https://github.com/sindresorhus/time-span.
 
 ### Benchmark
 
